@@ -1,0 +1,71 @@
+/* --- 1. Reset và Layout Chung --- */
+body {
+  background-color: #f4f6f8;
+  /* Màu nền nhẹ cho toàn bộ trang */
+  margin: 0;
+}
+
+/* --- 2. Styling cho Sidebar (Thanh điều hướng) --- */
+.dashboard-sidebar-paper {
+  background-color: #263238 !important;
+  /* Nền tối */
+  color: #e0e0e0 !important;
+  /* Chữ sáng */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+/* --- 3. Styling cho Menu Items trong Sidebar --- */
+.sidebar-item-button {
+  margin: 8px 10px;
+  border-radius: 6px !important;
+  transition: background-color 0.2s, border-left 0.2s;
+  /* Ghi đè màu chữ và icon mặc định của MUI */
+  color: #e0e0e0 !important;
+}
+
+.sidebar-item-button:hover {
+  background-color: #37474f !important;
+  /* Màu hover */
+}
+
+/* --- 4. Styling cho Menu Item đang Active --- */
+.sidebar-item-active {
+  background-color: #5e35b1 !important;
+  /* Màu nền Active (Tím đậm) */
+  color: white !important;
+  font-weight: bold;
+  border-left: 4px solid #7e57c2;
+  /* Thanh màu nhấn */
+}
+
+/* Ghi đè màu icon khi active */
+.sidebar-item-active .MuiListItemIcon-root {
+  color: white !important;
+}
+
+/* --- 5. Styling cho Header (Top Bar) --- */
+.dashboard-header {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  color: #333 !important;
+}
+
+/* --- 6. Styling cho Nội dung Chính (Main Content) --- */
+.main-content-box {
+  padding-top: 24px !important;
+  /* Khoảng cách trên */
+}
+
+/* --- 7. Tùy chỉnh Bảng (Table) --- */
+.custom-paper {
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
